@@ -6,16 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Page</title>
-    <style>
-        .question {
-            color: coral;
-            text-align: center;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
-<body>
-    <h2 class="question">What is the defferences between local storage and session storage?</h2>
+<body class="container">
+    <h2 class="text-warning text-center mt-5">What is the difference between local storage and session storage?</h2>
+    <p class="fw-bold">Local Storage:</p>
+    <ul>
+        <li>Local storage is the most recent mechanism.</li>
+        <li>It allows for larger amounts of data to be stored</li>
+        <li>Data is not deleted when the browser is closed.</li>
+        <li>Local storage is useful for storing data that the user will need to access later, such as offline data.</li>
+    </ul>
+    <p class="fw-bold">Session Storage:</p>
+    <ul>
+        <li>Session storage is similar to cookies.</li>
+        <li>Data is only stored for the current session.</li>
+        <li>Data will be deleted when the user closes the browser</li>
+        <li> Session storage is useful for storing data that is sensitive, such as login credentials.</li>
+    </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
