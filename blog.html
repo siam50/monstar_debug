@@ -38,10 +38,17 @@
     <h2 class="text-warning text-center mt-5">How does work event loop in Javascript?</h2>
     <p>JavaScript language is single-threaded and the asynchronous behaviour is not part of the JavaScript language
         itself, rather they are built on top of the core JavaScript language in the browser (or the programming
-        environment) and accessed through the browser APIs. The Event Loop has one simple job — to monitor the Call
+        environment) and accessed through the browser APIs. The Event Loop has one simple job to monitor the Call
         Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the
         queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the
         Event Loop.</p>
+    <h2 class="text-warning text-center mt-5">How can we get undefined in Javascript?</h2>
+    <ul>
+        <li>A variable that has not been assigned a value is of type undefined.</li>
+        <li> A method or statement also returns undefined if the variable that is being evaluated does not have an
+            assigned value.</li>
+        <li>A function returns undefined if a value was not returned.</li>
+    </ul>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
